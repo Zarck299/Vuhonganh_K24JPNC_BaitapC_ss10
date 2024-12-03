@@ -14,8 +14,6 @@ int main() {
             count++;
         }
     }
-
-    // Kiem tra neu có phan tu trung voi so dã nh?p
     if (count > 0) {
         printf("Phan tu %d tim thay tai cac vi tri sau: \n", key);
         for (int i = 0; i < count; i++) {
