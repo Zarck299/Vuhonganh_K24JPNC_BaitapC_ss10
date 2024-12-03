@@ -4,7 +4,7 @@ int main() {
     int arr[] = {3, 5, 7, 5, 9, 5, 12};
     int n = sizeof(arr) / sizeof(arr[0]); 
     int key;
-    printf("Nh?p ph?n t? c?n tìm: ");
+    printf("Nhap phan tu can tim: ");
     scanf("%d", &key);
     int positions[n];
     int count = 0;
@@ -15,14 +15,14 @@ int main() {
         }
     }
 
-    // Ki?m tra n?u có ph?n t? trùng v?i s? dã nh?p
+    // Kiem tra neu cÃ³ phan tu trung voi so dÃ£ nh?p
     if (count > 0) {
-        printf("Ph?n t? %d tìm th?y t?i các v? trí sau: \n", key);
+        printf("Phan tu %d tim thay tai cac vi tri sau: \n", key);
         for (int i = 0; i < count; i++) {
-            printf("V? trí %d\n", positions[i]);
+            printf("V? trÃ­ %d\n", positions[i]);
         }
     } else {
-        printf("Ph?n t? %d không t?n t?i trong m?ng.\n", key);
+        printf("Phan tu %d khÃ´ng ton tai trong mang.\n", key);
     }
 
     return 0;
